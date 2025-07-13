@@ -50,3 +50,14 @@ The system is composed of the following tables:
 | 18 | Get number of orders by delivery status |
 | 19 | List restaurants with both 5-star and low reviews |
 | 20 | Find the top 3 most reviewed restaurants |
+
+
+
+[Customers] ───< [Orders] >─── [Restaurants]  
+     │                    │  
+     └──< [Ratings_Reviews]   └──< [Order_Items] >─── [Food_Items]  
+                                        │  
+                                 [Payment]  
+                                        │  
+                                   [Delivery]
+
